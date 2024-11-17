@@ -8,7 +8,7 @@ on:
       - master
 jobs:
   push:
-    name: "steamcmd:proton"
+    name: "steamcmd-proton"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,4 +27,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/notfoundname/steamcmd:proton
+            ghcr.io/notfoundname/steamcmd-proton
